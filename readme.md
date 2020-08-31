@@ -64,8 +64,10 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Screenshot(s):**
 
-![screenshot(s) die een goed beeld geven van de website die je gaat maken](images/instagram-homepage.PNG)(images/instagram-profiel.PNG)
+![de homepagina](images/instagram-homepage.PNG)
+&
+![de pagina waar je profiel wordt weergegeven](images/instagram-profiel.PNG)
 
 **Breakdown-schets(en):**
 
-![-voorlopige breakdownschets(en) van een of beide pagina's van de site die je gaat maken-]()
+![]()
