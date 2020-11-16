@@ -70,4 +70,4 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Breakdown-schets(en):**
 
-![]()
+![Breakdown schets profielpagina (iPhone 11)](images/breakdown-schets-profiel.PNG)
