@@ -3,3 +3,17 @@
   box-sizing:border-box;  
 }
 
+body{
+  background: #ffffff;
+}
+
+header{
+  background: #fafafa;
+  border-bottom: .1em solid #cccccc;
+a{
+  position: relative;
+  display: inline-block;
+  margin-left: -1em;
+  text-align: center;
+}
+}
