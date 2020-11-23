@@ -3,17 +3,33 @@
   box-sizing:border-box;  
 }
 
-body{
+body {
   background: #ffffff;
 }
 
-header{
+header {
   background: #fafafa;
   border-bottom: .1em solid #cccccc;
-a{
-  position: relative;
-  display: inline-block;
-  margin-left: -1em;
-  text-align: center;
+
 }
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  border: 10px solid goldenrod;
+  height: 100vh;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1;
+  
+}
+
+.postimage {
+  width: 100%;
+}
+
+.postbuttons {
+  
 }
