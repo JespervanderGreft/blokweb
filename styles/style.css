@@ -22,12 +22,16 @@ header {
 }
 
 .card {
+  /* display: flex; */
+  justify-content: flex-start;
+
   flex: 1;
   
 }
 
 .postimage {
-  width: 100%;
+  width: 50%;
+  height: 50%;
 }
 
 .postbuttons {
