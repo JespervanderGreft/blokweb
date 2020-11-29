@@ -29,8 +29,8 @@ header {
   
 }
 
-.postimage {
-  width: 50%;
-  height: 50%;
+button:nth-of-type(1){
+background-image: url(images/hart.png);
+width: 5em;
+height: 5em;
 }
-
