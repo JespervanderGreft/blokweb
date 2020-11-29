@@ -1,36 +1,101 @@
 /* CSS Document */
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 
+/* achtergrond kleur */
 body {
-  background: #ffffff;
+  background: #fafafa;
 }
 
 header {
-  background: #fafafa;
+  background: #ffffff;
   border-bottom: .1em solid #cccccc;
+  margin-bottom: .1em;
+}
+
+header:nth-of-type(1) ul {
+  display:flex;
+  list-style: none;
+}
+
+section:nth-of-type(1) {
+  background: #ffffff;
+  border: .1em solid #cccccc;
+  border-radius: .2em;
+  margin-bottom: 2em;
+}
+
+section:nth-of-type(1) ul {
+  display:flex;
+  justify-content: left;
+  list-style: none;
+  overflow: scroll;
+}
+
+section:nth-of-type(1) li {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+section:nth-of-type(1) img {
+  height: 4em;
+  width: 4em;
+  border: double .2em transparent;
+  border-radius: 50%;
+  background-image: linear-gradient(white, white),
+    linear-gradient(to right, red, rgb(177, 83, 177));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
 
 }
 
-.container {
-  display: flex;
-  justify-content: flex-start;
-  border: 10px solid goldenrod;
-  height: 100vh;
-  flex-wrap: wrap;
+article img:nth-of-type(2) {
+  width: 100%;
 }
 
-.card {
-  /* display: flex; */
-  justify-content: flex-start;
-
-  flex: 1;
-  
+article button:nth-of-type(1) {
+  background: url("/images/hart.svg");
+  background-repeat: no-repeat;
+  border: none;
+  width: 2em;
+  height: 2em;
 }
 
-button:nth-of-type(1){
-background-image: url(images/hart.png);
-width: 5em;
-height: 5em;
+article button:nth-of-type(2) {
+  background: url("/images/reacties.svg");
+  background-repeat: no-repeat;
+  border: none;
+  width: 2em;
+  height: 2em;
+}
+
+article button:nth-of-type(3) {
+  background: url("/images/direct.svg");
+  background-repeat: no-repeat;
+  border: none;
+  width: 2em;
+  height: 2em;
+}
+
+article button:nth-of-type(4) {
+  background: url("/images/bookmark.svg");
+  background-repeat: no-repeat;
+  border: none;
+  width: 2em;
+  height: 2em;
+}
+
+article p button:nth-of-type(1) {
+  background: url("/images/hart.svg");
+  background-repeat: no-repeat;
+  border: none;
+  width: 1em;
+  height: 1em;
+}
+
+article p:nth-of-type(3) {
+  overflow-wrap: break-word;
 }
