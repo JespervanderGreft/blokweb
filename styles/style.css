@@ -18,8 +18,9 @@ header {
   display:flex;
   flex-wrap:wrap;
   justify-content:center;
+  align-items: center;
   position: sticky;
-  top:0;
+  top: 0;
   background: #ffffff;
   border-bottom: .1em solid #cccccc;
   margin-bottom: .1em;
@@ -27,9 +28,9 @@ header {
 
 header > a {
   display:block;
-  width:9em; height:3.5em;
+  width: 50%;
   line-height:1em;
-  padding:.75em 0 .75em 2.75em;
+  padding:.75em 0 .75em .75em;
   background:url("/images/Instagram_logo.svg") .75em center / auto 2.75em no-repeat;
   color: transparent;
   text-decoration:none;
@@ -44,6 +45,42 @@ header nav ul {
   margin:0; padding:0;
   list-style:none;
   display:flex;
+}
+
+header nav li {
+  min-width:1em;
+  flex-grow:1;
+}
+
+ul:nth-of-type(1) {
+  display: flex;
+}
+
+ul:nth-of-type(1) li {
+  display: flex;
+  justify-content: left;
+  flex-direction: column; 
+  align-items: center;
+  margin-bottom: -0.9em;
+}
+
+ul:nth-of-type(1) li > img {
+  height: 4em;
+  width: 4em;
+  border: double .2em transparent;
+  border-radius: 50%;
+  background-image: linear-gradient(white, white),
+    linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+ul:nth-of-type(1) li + li {
+  margin-left: -1em;
+}
+
+ul:nth-of-type(1) li p  {
+  font-size: .8em;
 }
 
 h2 {
@@ -78,18 +115,6 @@ section:nth-of-type(1) ul {
 section:nth-of-type(1) li {
   padding-left: 1em;
   padding-right: 1em;
-}
-
-section:nth-of-type(1) img {
-  height: 4em;
-  width: 4em;
-  border: double .2em transparent;
-  border-radius: 50%;
-  background-image: linear-gradient(white, white),
-    linear-gradient(to right, red, rgb(177, 83, 177));
-  background-origin: border-box;
-  background-clip: content-box, border-box;
-
 }
 
 article img:nth-of-type(2) {
