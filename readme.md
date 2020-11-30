@@ -38,7 +38,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ### Stand van zaken
 
--dit ging goed & dit was lastig-
+-dit ging goed & dit was lastig
 Ik vond het lastig om te beginnen met mijn html structuur te geven, het is een hele tijd geleden dat ik
 een website heb gemaakt vanaf 0. Na de eerste feedback van mijn eerste html structuur kreeg ik ook gelijk te
 horen dat ik moet proberen om niet met classes te werken, ik had dit op internet gezien omdat het daar veel wordt
@@ -46,7 +46,7 @@ gebruikt maar inderdaad dit is niet handig. Ik ben mijn html gaan aanpassen a.d.
 is veel overzichtelijker en netter.
 Toen mijn html goed stond wilde ik ook beginnen met de css, met de hulp van de gemaakte huiswerk opdrachten wist ik nu
 hoe ik elementen kon selecteren a.d.h.v selectoren zoals first-of-type.
-Ik ben erg blij met mijn eerste voortgang omdat ik toch als best veel voor elkaar heb gekregen in een korte tijd.
+Ik ben erg blij met mijn eerste voortgang omdat ik toch als best veel voor elkaar heb gekregen in een korte tijd-
 
 **Screenshot(s):**
 
