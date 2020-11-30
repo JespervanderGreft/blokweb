@@ -38,8 +38,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ### Stand van zaken
 
--dit ging goed & dit was lastig
-Ik vond het lastig om te beginnen met mijn html structuur te geven, het is een hele tijd geleden dat ik
+-Ik vond het lastig om te beginnen met mijn html structuur te geven, het is een hele tijd geleden dat ik
 een website heb gemaakt vanaf 0. Na de eerste feedback van mijn eerste html structuur kreeg ik ook gelijk te
 horen dat ik moet proberen om niet met classes te werken, ik had dit op internet gezien omdat het daar veel wordt
 gebruikt maar inderdaad dit is niet handig. Ik ben mijn html gaan aanpassen a.d.h.v feedback en mijn nieuwe structuur
@@ -55,12 +54,26 @@ Ik ben erg blij met mijn eerste voortgang omdat ik toch als best veel voor elkaa
 
 ### Agenda voor meeting
 
--samen met je groepje opstellen-
-Ik heb het idee dat ik helemaal geen groepje heb omdat alle mensen die bij mij zitten nooit aanwezig zijn geweest denk ik.
+-Ik heb het idee dat ik helemaal geen groepje heb omdat alle mensen die bij mij zitten nooit aanwezig zijn geweest denk ik. (dit klopte)-
+
 
 ### Verslag van meeting
 
--na afloop snel uitkomsten vastleggen-
+-De feedback die ik heb ontvangen: 
+Even in de readme zetten waarom ik viewbox gebruik bij de header svg.
+
+Profielnamen zijn h2 en die dan stijlen.
+
+Opties icoon misschien op een andere manier maar nog mee wachten.
+
+Volledige url gebruiken met images linken want dan zijn ze op github ook te zien.
+
+In je button tekst zetten wat de button is en de tekst laten verdwijnen, tekst transparant maken.
+
+De p van aantal opmerkingen moet een detail wss worden staat in teams welke opties je daarbij hebt.
+
+Bovenkant van de post met align content doen en flexbox.
+-
 
 
 
