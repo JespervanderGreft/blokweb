@@ -29,14 +29,17 @@ header {
   padding: 0px 20px;
 }
 
-header h1,
-a {
+header > h1 {
   display: block;
   justify-items: center;
-  align-items: center;
   font-size: 2em;
   font-weight: bold;
+  padding-right: 7px;
   margin: 0px 0px;
+}
+
+header > h1 > a {
+  display: flex;
 }
 
 header nav {
@@ -46,14 +49,17 @@ header nav {
 header nav ul {
   list-style: none;
   display: flex;
-  justify-content: right;
+  flex-direction: row;
+  flex-wrap: wrap;
+  float: right;
   align-items: center;
 }
 
 header nav li {
-  min-width: 1em;
   flex-grow: 1;
-  padding: 0px 0px;
+  display: flex;
+  justify-content: center;
+  padding-left: 1.5em;
 }
 
 /* styling van de eerste sectie (verhalen) */
