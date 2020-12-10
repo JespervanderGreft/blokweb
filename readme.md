@@ -8,7 +8,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ## Bronnenlijst
 1. -https://stackoverflow.com/questions/5706963/possible-to-use-border-radius-together-with-a-border-image-which-has-a-gradient-
 2. -https://www.instagram.com/-
-3. -...-
+3. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details-
 
 
 

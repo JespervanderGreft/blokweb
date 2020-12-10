@@ -175,18 +175,19 @@ h3 {
 
 /* styling article */
 article>header {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: left;
+  display: grid;
+  grid-template-columns: 0.5fr 2.3fr 0.3fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "profiel tekst button"
 } 
 
 /* styling button van profiel */
 article>header>button:nth-of-type(1) {
+  grid-area: profiel;
   border: none;
   background: none;
   padding-left: 1.14em;
-  padding-right: .6em;
 }
 
 /* de image in de button stylen */
@@ -201,29 +202,34 @@ article>header>button>a:nth-of-type(1)>img {
   background-clip: content-box, border-box;
 }
 
-article>header>h2 a {
-  padding-left: 0em;
-  padding-bottom: 0em;
-  margin-left: 0em;
-  margin-bottom: 0em;
+article>header>h2 {
+  grid-area: tekst; 
+}
+
+article>header>h2>a {
+  padding-left: 0em; 
 }
 
 article>header>p {
-  padding-top: 0em;
-  margin-top: 0em;
-  margin-left: 3.4em;
+  grid-area: tekst;
+  margin-top: 2.5em;
+  margin-left: 0em;
+  font-size: 0.86em;
+  color: #262626;
 }
 
 article>header>button:nth-of-type(2) {
-  justify-self: right;
-  background: url("/images/opties.svg");
+  grid-area: button;
+  background: url("../images/opties.svg");
   background-repeat: no-repeat;
   border: none;
   overflow: hidden;
   color: transparent;
   width: 1.14em;
-  height: 1.14em;
+  align-self: center;
+  justify-self: right;
   margin-right: 1.14em;
+  padding: 0em;
 }
 
 /* username stylen */
@@ -237,16 +243,20 @@ article h2 a {
   padding: 0em 1.14em;
 }
 
-article>header>h2 {
-  display: flex;
-}
-
-article>header>p {
-  display: flex;
-}
-
-article p {
+article>details {
   padding: 0em 1.14em;
+}
+
+article>details>summary::-webkit-details-marker {
+  display: none;
+}
+
+article>p {
+  padding: 0em 1.14em;
+}
+
+article>a:nth-last-of-type() {
+  background: red;
 }
 
 article img:nth-of-type(1) {
@@ -257,7 +267,7 @@ article img:nth-of-type(1) {
 }
 
 article>button:nth-of-type(1) {
-  background: url("/images/hart.svg");
+  background: url("../images/hart.svg");
   background-repeat: no-repeat;
   border: none;
   overflow: hidden;
@@ -271,7 +281,7 @@ article>button:nth-of-type(1) {
 }
 
 article>button:nth-of-type(2) {
-  background: url("/images/reacties.svg");
+  background: url("../images/reacties.svg");
   background-repeat: no-repeat;
   border: none;
   overflow: hidden;
@@ -284,7 +294,7 @@ article>button:nth-of-type(2) {
 }
 
 article>button:nth-of-type(3) {
-  background: url("/images/direct.svg");
+  background: url("../images/direct.svg");
   background-repeat: no-repeat;
   border: none;
   overflow: hidden;
@@ -296,7 +306,7 @@ article>button:nth-of-type(3) {
 }
 
 article>button:nth-of-type(4) {
-  background: url("/images/bookmark.svg");
+  background: url("../images/bookmark.svg");
   background-repeat: no-repeat;
   border: none;
   overflow: hidden;
@@ -321,7 +331,7 @@ article>button:nth-of-type(5) {
 }
 
 article>p>button:nth-of-type(1) {
-  background: url("/images/hart.svg");
+  background: url("../images/hart.svg");
   background-repeat: no-repeat;
   border: none;
   overflow: hidden;
