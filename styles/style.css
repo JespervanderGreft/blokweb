@@ -100,7 +100,7 @@ section:nth-of-type(1)>ul>button {
   top: 3.2em;
   right: .56em;
   align-items: center;
-  background: url("/images/verderknop.svg");
+  background: url("../images/verderknop.svg");
   background-repeat: no-repeat;
   border-radius: 50%;
   border: transparent;
