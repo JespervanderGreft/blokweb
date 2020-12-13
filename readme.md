@@ -30,7 +30,26 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 2 (week 5)
 
--same as voortgang 1-
+### Stand van zaken
+
+-Het gaat heel erg goed met de homepage van Instagram alleen de reacties sectie moet ik nog verbeteren want dat staat nog niet goed.
+Ik moet nog de pagina responsive maken en daarna mijn profielpagina maken.-
+
+**Screenshot(s):**
+
+-screenshot(s) van hoe ver je bent-
+![Eerste voortgang Instagram op iPhone 11](images/tweedevoortgang.png)
+
+### Agenda voor meeting
+
+-Net als de vorige meeting kan ik niet met andere bespreken want niemand is er elke keer.
+Voor mezelf wil ik de volgende punten bespreken:
+~ Hoe ik de reacties sectie goed kan krijgen
+~ Hoe ik het beste de website responsive kan maken en vooral de header
+~ Of het goed is hoe ik de footer heb gedaan van de article -
+
+
+### Verslag van meeting
 
 
 
