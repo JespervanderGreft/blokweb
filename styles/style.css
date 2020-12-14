@@ -12,7 +12,7 @@ html {
 /* achtergrond kleur, font*/
 body {
   background: #fafafa;
-  font-family: proxima-nova, sans-serif;
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 1em;
