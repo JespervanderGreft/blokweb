@@ -18,7 +18,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 -dit ging goed & dit was lastig-
 
-**Screenshot(s):**
+**Screenshot():**
 
 -screenshot(s) van je eindresultaat-
 
@@ -37,7 +37,8 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ### Stand van zaken
 
 -Het gaat heel erg goed met de homepage van Instagram alleen de reacties sectie moet ik nog verbeteren want dat staat nog niet goed.
-Ik moet nog de pagina responsive maken en daarna mijn profielpagina maken.-
+Ik moet nog de pagina responsive maken en daarna mijn profielpagina maken.
+Ik gebruik viewbox omdat de css anders geladen moet worden en alles verplaatst wanneer ik dit niet zou gebruiken zou de nav groot worden door de svg's.-
 
 **Screenshot(s):**
 

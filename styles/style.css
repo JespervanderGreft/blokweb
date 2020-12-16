@@ -17,7 +17,6 @@ body {
   font-style: normal;
   font-size: 1em;
   margin: 0;
-  max-width: 42.86em;
   color: #262626;
 }
 
@@ -28,6 +27,7 @@ body>header {
   justify-content: center;
   align-items: center;
   position: sticky;
+  width: 100%;
   z-index: 2;
   top: 0;
   background: #ffffff;
@@ -42,10 +42,43 @@ body>header>h1 {
   font-size: 2em;
   font-weight: bold;
   margin: 0em 0em;
+  padding-right: 1.5em;
 }
 
 body>header>h1>a {
   display: flex;
+}
+
+body>header input {
+  display: none;
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1em;
+  text-decoration: none;
+  color: #8e8e8e;
+  align-items: center;
+  height: 2.3em;
+  width: 15.357em;
+  min-width: 8.929em;
+  padding-left: 5.714em;
+  box-sizing: border-box;
+  background: url("../images/zoek.png");
+  background-size: 0.714em;
+  background-repeat: no-repeat;
+  background-color: #fafafa;
+  background-position: 4.429em 50%;
+  border: solid 1px #dbdbdb;
+  border-radius: 0.214em;
+}
+
+::placeholder {
+  text-decoration: none;
+}
+
+body>header input:focus {
+  padding-left: 16px;
+  background-position: 0;
 }
 
 body>header>nav {
@@ -68,14 +101,23 @@ body>header>nav>ul>li {
   padding-left: 1.5em;
 }
 
+body>header>nav>ul>li:first-of-type {
+  padding-left: 0em;
+}
+
 /* hele kleine inner shadow */
 body>header>nav>ul>li:nth-of-type(5) img {
   box-shadow: inset 0 0 0.1em #000000;
   border-radius: 50%;
 }
 
+body .homepage {
+  max-width: 42.86em;
+  margin: auto;
+}
+
 /* styling van de eerste sectie (verhalen) */
-section:nth-of-type(1) {
+body .homepage>section:nth-of-type(1) {
   position: relative;
   z-index: 1;
   background: #ffffff;
@@ -84,7 +126,7 @@ section:nth-of-type(1) {
   margin-bottom: 2em;
 }
 
-section:nth-of-type(1)>ul {
+body .homepage>section:nth-of-type(1)>ul {
   display: flex;
   justify-content: left;
   padding-inline-start: 0em;
@@ -95,7 +137,7 @@ section:nth-of-type(1)>ul {
 }
 
 /* styling voor de verder knop */
-section:nth-of-type(1)>ul>button {
+body .homepage>section:nth-of-type(1)>ul>button {
   position: absolute;
   top: 3.2em;
   right: .56em;
@@ -116,7 +158,7 @@ section:nth-of-type(1)>ul>button {
   background: transparent;
 }
 
-section:nth-of-type(1)>ul>li {
+body .homepage>section:nth-of-type(1)>ul>li {
   display: flex;
   justify-content: left;
   flex-direction: column;
@@ -128,12 +170,12 @@ section:nth-of-type(1)>ul>li {
 }
 
 /* padding rechts voor alleen de laatste story */
-section:nth-of-type(1)>ul>li:nth-last-of-type(1) {
+body .homepage>section:nth-of-type(1)>ul>li:nth-last-of-type(1) {
   padding-right: 4em;
   padding-left: 4em;
 }
 
-section:nth-of-type(1) ul>li>img {
+body .homepage>section:nth-of-type(1) ul>li>img {
   height: 5.5em;
   width: 5.5em;
   border: double .5em white;
@@ -144,7 +186,7 @@ section:nth-of-type(1) ul>li>img {
   background-clip: content-box, border-box;
 }
 
-section:nth-of-type(1)>ul>li>p {
+body .homepage>section:nth-of-type(1)>ul>li>p {
   margin-top: .2em;
   margin-bottom: 0em;
   font-size: 1em;
@@ -155,16 +197,14 @@ section:nth-of-type(1)>ul>li>p {
 }
 
 /* styling van de h2 */
-h2 {
-  font-family: proxima-nova, sans-serif;
+body .homepage h2 {
   font-weight: 600;
   font-style: normal;
   font-size: 1em;
 }
 
 /* styling van de h3 */
-time {
-  font-family: proxima-nova, sans-serif;
+body .homepage time {
   font-weight: 300;
   font-style: normal;
   font-size: .715em;
@@ -174,7 +214,7 @@ time {
 }
 
 /* styling article */
-article>header {
+body .homepage article>header {
   display: grid;
   grid-template-columns: 0.5fr 2.3fr 0.3fr;
   grid-template-rows: 1fr;
@@ -185,14 +225,14 @@ article>header {
 } 
 
 /* styling button van profiel */
-article>header>button:nth-of-type(1) {
+body .homepage article>header>button:nth-of-type(1) {
   grid-area: profiel;
   border: none;
   background: none;
 }
 
 /* de image in de button stylen */
-article>header>button>a:nth-of-type(1)>img {
+body .homepage article>header>button>a:nth-of-type(1)>img {
   width: 3em;
   height: 3em;
   border: double .5em white;
@@ -203,29 +243,30 @@ article>header>button>a:nth-of-type(1)>img {
   background-clip: content-box, border-box;
 }
 
-article>header>h2 {
+body .homepage article>header>h2 {
   grid-area: tekst; 
 }
 
-article>header>p>a {
-  text-decoration: none;
-  color: inherit;
-  font-weight: bold;
-}
-
-article>header>h2>a {
+body .homepage article>header>h2>a {
   padding-left: 0em; 
 }
 
-article>header>p {
+body .homepage article>header>p {
   grid-area: tekst;
   margin-top: 2.5em;
   margin-left: 0em;
+  padding: 0;
   font-size: 0.86em;
   color: #262626;
 }
 
-article>header>button:nth-of-type(2) {
+body .homepage article>header>p>a {
+  text-decoration: none;
+  color: #262626;
+  font-weight: 600;
+}
+
+body .homepage article>header>button:nth-of-type(2) {
   grid-area: button;
   background: url("../images/opties.svg");
   background-repeat: no-repeat;
@@ -241,8 +282,7 @@ article>header>button:nth-of-type(2) {
 }
 
 /* username stylen */
-article h2 a {
-  font-family: proxima-nova, sans-serif;
+body .homepage article h2 a {
   font-weight: 600;
   font-style: normal;
   font-size: 1em;
@@ -251,74 +291,7 @@ article h2 a {
   padding: 0em 1.14em;
 }
 
-article>footer {
-  display: grid;
-  grid-template-columns: 0.1fr 1fr 0.1fr;
-  grid-template-rows: 1fr 0.2fr 0.5fr 0.5fr;
-  gap: 0em 0em;
-}
-
-article>footer>h2:nth-of-type(1) {
-  grid-column-start: 1;
-  grid-column-end: 1;
-  grid-row-start: 1;
-}
-
-article>footer>p:nth-of-type(1) {
-  grid-column-start: 2;
-  grid-column-end: -1;
-}
-
-article>footer>details {
-  grid-column-start: 1;
-  grid-column-end: -1;
-  padding: 0em 1.14em;
-  color: #8e8e8e;
-}
-
-article>footer>details>summary::-webkit-details-marker {
-  display: none;
-}
-
-article>footer>h2:nth-of-type(2) {
-  grid-column-start: 1;
-  grid-column-end: 1;
-  grid-row-start: 3;
-}
-
-article>footer>p:nth-of-type(2) {
-  grid-column-start: 2;
-  grid-column-end: -1;
-}
-
-article>footer>h2:nth-of-type(3) {
-  grid-column-start: 1;
-  grid-column-end: 1;
-  grid-row-start: 4;
-}
-
-article>footer>p:nth-of-type(3) {
-  grid-column-start: 2;
-  grid-column-end: -1;
-}
-
-article p {
-  padding: 0em 1.14em;
-}
-
-article p>a {
-  text-decoration: none;
-  color: #00376b;
-}
-
-article img:nth-of-type(1) {
-  display: flex;
-  width: 100%;
-  max-width: 42.86em;
-  align-self: center;
-}
-
-article>button:nth-of-type(1) {
+body .homepage article:first-child>button:nth-of-type(1) {
   background: url("../images/hart.svg");
   background-repeat: no-repeat;
   border: none;
@@ -328,11 +301,11 @@ article>button:nth-of-type(1) {
   height: 2em;
   margin-right: 1.14em;
   margin-left: 1.14em;
-  margin-top: 0.57em;
+  margin-top: 0.71em;
   margin-bottom: 0.57em;
 }
 
-article>button:nth-of-type(2) {
+body .homepage article>button:nth-of-type(2) {
   background: url("../images/reacties.svg");
   background-repeat: no-repeat;
   border: none;
@@ -341,11 +314,11 @@ article>button:nth-of-type(2) {
   width: 2em;
   height: 2em;
   margin-right: 1.14em;
-  margin-top: 0.57em;
+  margin-top: 0.71em;
   margin-bottom: 0.57em;
 }
 
-article>button:nth-of-type(3) {
+body .homepage article>button:nth-of-type(3) {
   background: url("../images/direct.svg");
   background-repeat: no-repeat;
   border: none;
@@ -353,11 +326,11 @@ article>button:nth-of-type(3) {
   color: transparent;
   width: 2em;
   height: 2em;
-  margin-top: 0.57em;
+  margin-top: 0.71em;
   margin-bottom: 0.57em;
 }
 
-article>button:nth-of-type(4) {
+body .homepage article>button:nth-of-type(4) {
   background: url("../images/bookmark.svg");
   background-repeat: no-repeat;
   border: none;
@@ -367,14 +340,14 @@ article>button:nth-of-type(4) {
   width: 2em;
   height: 2em;
   padding: 0em 1.43em;
-  margin-top: 0.57em;
+  margin-top: 0.71em;
   margin-bottom: 0.57em;
 }
 
-article>button:nth-of-type(5) {
+body .homepage article>button:nth-of-type(5) {
   display: block;
   border: none;
-  font-family: proxima-nova, sans-serif;
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   font-weight: 600;
   font-style: normal;
   font-size: 1em;
@@ -382,15 +355,70 @@ article>button:nth-of-type(5) {
   padding: 0em 1.14em;
 }
 
-article>footer>p>button:nth-of-type(1) {
+body .homepage article p {
+  padding: 0em 1.14em;
+}
+
+body .homepage article p>a {
+  text-decoration: none;
+  color: #00376b;
+}
+
+body .homepage article>footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+body .homepage article>footer>h2:first-of-type {
+  /* flex-grow: 1; */
+  flex-basis: auto;
+  padding: 0;
+  margin: 0;
+}
+
+body .homepage article>footer>p:first-of-type {
+  /* flex-grow: 2; */
+  padding: 0 1.14em;
+  margin: 0;
+}
+
+body .homepage article>footer>details {
+  display: flex;
+  padding: 0em 1.14em;
+  color: #8e8e8e;
+  width: 100%;
+}
+
+body .homepage article>footer>details>summary::-webkit-details-marker {
+  display: none;
+}
+
+body .homepage article>footer>article {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 0;
+  margin: 0;
+}
+
+body .homepage article img:nth-of-type(1) {
+  display: flex;
+  width: 100%;
+  max-width: 42.86em;
+  align-self: center;
+}
+
+body .homepage article>footer>article>button {
+  display: flex;
   background: url("../images/hart.svg");
   background-repeat: no-repeat;
   border: none;
   overflow: hidden;
   color: transparent;
-  width: 0.86em;
-  height: 0.86em;
-  float: right;
+  width: .86em;
+  height: .86em;
+  justify-self: right;
 }
 
 body>footer {
@@ -398,6 +426,7 @@ body>footer {
   flex-wrap: wrap;
   justify-content: center;
   margin-left: 0em;
+  margin-bottom: 3.25em;
 }
 
 body>footer>ul{
@@ -417,28 +446,28 @@ body>footer>ul>li {
 
 body>footer>ul>li>a {
   text-decoration: none;
-  font-family: proxima-nova, sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
   font-size: .86em;
   color: #8e8e8e;
 }
 
-body>footer>button {
-  text-decoration: none;
-  font-family: proxima-nova, sans-serif;
-  font-weight: 300;
+body>footer>select {
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  font-weight: 400;
   font-style: normal;
   font-size: .86em;
   color: #8e8e8e;
   border: none;
   background: none;
+  width: 7em;
+  text-overflow: ellipsis;
+  margin-right: 1em;
 }
 
 body>footer>p {
   text-decoration: none;
-  font-family: proxima-nova, sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
   font-size: .86em;
   color: #8e8e8e;
