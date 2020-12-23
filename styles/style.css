@@ -645,10 +645,12 @@ body .homepage time {
 
 body>footer {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  place-content: center;
   align-items: center;
-  margin-left: 0em;
+  max-width: 27.28572em;
+  margin: auto;
   margin-top: 2em;
   margin-bottom: 3.714285em;
 }
@@ -659,7 +661,6 @@ body>footer>ul {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  width: 27.28572em;
   margin: auto;
   margin-bottom: 1em;
 }
@@ -679,6 +680,8 @@ body>footer>ul>li>a {
 }
 
 body>footer>select {
+  display: inline-block;
+  justify-content: center;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -692,6 +695,8 @@ body>footer>select {
 }
 
 body>footer>p {
+  display: inline-block;
+  justify-content: center;
   text-decoration: none;
   font-weight: 400;
   font-style: normal;
@@ -700,6 +705,7 @@ body>footer>p {
 }
 
 @media (max-width: 355px) {
+  /* zorgt ervoor dat de header op een iphone 5 ook nog goed is */
   body>div>header>nav>ul>li {
     padding-left: .5em;
   }
