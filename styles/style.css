@@ -381,8 +381,8 @@ body .homepage article>header {
   grid-template-columns: 0.4fr 2.3fr 0.2fr;
   grid-template-rows: 0.5fr 0.5fr;
   gap: 0px 0px;
-  grid-template-areas: "profiel tekst1 button"
-  "profiel tekst2 button";
+  grid-template-areas: "profiel tekst button"
+  "profiel tekst button";
   margin-right: 1.14286em;
   margin-left: 1em;
   margin-bottom: .6em;
@@ -397,7 +397,8 @@ body .homepage article>header>button:nth-of-type(1) {
   height: 3.15em;
 }
 
-/* de image in de button stylen */
+/* de image in de button stylen 
+wanneer het profiel ook een verhaal heeft*/
 body .homepage article>header>button>a:nth-of-type(1)>img {
   width: 2.3em;
   height: 2.3em;
@@ -408,9 +409,21 @@ body .homepage article>header>button>a:nth-of-type(1)>img {
   background-origin: border-box;
   background-clip: content-box, border-box;
 }
+/* de image niet stylen wanneer er geen verhaal is */
+body .homepage article:nth-of-type(3)>header>button>a:nth-of-type(1)>img {
+  border: none;
+}
 
 body .homepage article>header>h2 {
-  grid-area: tekst1;
+  grid-area: tekst;
+  grid-row-start: 1;
+  grid-row-end: -1;
+  padding: 0;
+  margin-bottom: 1.2em;
+}
+
+body .homepage article>header>button+h2 {
+  grid-area: tekst;
   grid-row-start: 1;
   grid-row-end: -1;
   padding: 0;
@@ -422,9 +435,9 @@ body .homepage article>header>h2>a {
 }
 
 body .homepage article>header>p {
-  grid-area: tekst2;
-  align-self: flex-start;
-  margin-top: .3em;
+  grid-area: tekst;
+  align-self: center;
+  margin-top: 1.5em;
   margin-left: 0em;
   padding: 0;
   font-size: 0.86em;
