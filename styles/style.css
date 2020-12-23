@@ -424,7 +424,7 @@ body .homepage article>header>h2>a {
 body .homepage article>header>p {
   grid-area: tekst2;
   align-self: flex-start;
-  margin-top: .2em;
+  margin-top: .3em;
   margin-left: 0em;
   padding: 0;
   font-size: 0.86em;
