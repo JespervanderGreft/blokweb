@@ -162,6 +162,9 @@ body {
 }
 
 body>div {
+  position: sticky;
+  top: 0;
+  z-index: 2;
   background: #ffffff;
   border-bottom: 0.05em solid rgba(var(--b6a, 219, 219, 219), 1);
 }
@@ -171,9 +174,6 @@ body>div>header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
-  z-index: 2;
-  top: 0;
   min-height: 3.786em;
   max-height: 3.786em;
   max-width: 64.38em;
@@ -199,7 +199,7 @@ body>div>header>h1>a {
   color: transparent;
 }
 
-body>div>header input {
+body>div>header>input {
   display: none;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: 300;
@@ -713,7 +713,7 @@ body>footer>p {
 
 @media (min-width: 600px) {
   /* zoekbalk toevoegen */
-  body>div>header input {
+  body>div>header>input {
     display: block;
   }
 }
