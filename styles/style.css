@@ -744,12 +744,12 @@ body>footer>p {
 body .profiel {
   max-width: 64.38em;
   margin: auto;
-  margin-top: 1.5em;
+  margin-top: 1em;
   overflow-x: hidden;
   }
 
 body .profiel section:first-of-type {
-  padding-bottom: 2em;
+  padding-bottom: 1em;
   border-bottom: 0.05em solid rgba(var(--b6a, 219, 219, 219), 1);
 }
 
@@ -759,8 +759,8 @@ body .profiel section>header {
   grid-template-columns: 7em 4fr 0.5fr;
   grid-template-rows: 1.5fr 1.5fr;
   gap: 0px 0px;
-  grid-template-areas: "profiel tekst1 button"
-    "profiel tekst2 tekst2";
+  grid-template-areas: "profiel tekst1 instellingen"
+    "profiel button button";
   margin-right: 1.14286em;
   margin-left: 1em;
   margin-top: .7em;
@@ -768,7 +768,7 @@ body .profiel section>header {
 }
 
 /* styling button van profiel */
-body .profiel section>header>button:nth-of-type(1) {
+body .profiel section>header>button:first-of-type {
   grid-area: profiel;
   border: none;
   background: none;
@@ -777,7 +777,7 @@ body .profiel section>header>button:nth-of-type(1) {
 }
 
 /* de image in de button stylen*/
-body .profiel section>header>button>a:nth-of-type(1)>img {
+body .profiel section>header>button:first-of-type>a>img {
   width: 5.7em;
   height: 5.7em;
   border: none;
@@ -790,13 +790,13 @@ body .profiel section>header>p {
   padding: 0;
   margin-bottom: 0;
   align-self: center;
-  font-size: 2.1em;
+  font-size: 2em;
   font-weight: 200;
   color: #262626;
 }
 
 body .profiel section>header>button:nth-of-type(2) {
-  grid-area: button;
+  grid-area: instellingen;
   background: url("../images/instellingen.svg");
   background-repeat: no-repeat;
   background-size: 2em 2em;
@@ -811,8 +811,8 @@ body .profiel section>header>button:nth-of-type(2) {
   margin: 0em;
 }
 
-body .profiel section>header>button:nth-of-type(3) {
-  grid-area: tekst2;
+body .profiel section>header>button:last-of-type {
+  grid-area: button;
   padding: 0;
 }
 
@@ -830,10 +830,111 @@ body .profiel section>footer {
   margin-left: 1em;
 }
 
-body .profiel section>footer>p>a {
+body .profiel section:first-of-type>footer>p {
+  margin-bottom: .5em;
+}
+
+body .profiel section:first-of-type>footer>p:first-of-type {
+  font-weight: 500;
+}
+
+body .profiel section:first-of-type>footer>p>a {
   font-weight: 500;
   color: #00376B;
   text-decoration: none;
+}
+
+body .profiel section:nth-of-type(2) {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-bottom: 0.05em solid rgba(var(--b6a, 219, 219, 219), 1);
+}
+
+body .profiel section:nth-of-type(2)>ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    ". . .";
+}
+
+body .profiel section:nth-of-type(2)>ul>li {
+  max-width: 4em;
+  justify-self: center;
+  text-align: center;
+  line-height: 1.4em;
+}
+
+body .profiel section:nth-of-type(2)>ul>li::first-line {
+  font-weight: 500;
+}
+
+body .profiel section:nth-of-type(2)>ul>li>a {
+  text-decoration: none;
+  color: #262626;
+}
+
+body .profiel section:nth-of-type(3) {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-bottom: .05em solid rgba(var(--b6a, 219, 219, 219), 1);
+}
+
+body .profiel section:nth-of-type(3)>nav>ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    ". . .";
+}
+
+body .profiel section:nth-of-type(3)>nav>ul>li {
+  justify-self: center;
+}
+
+body .profiel section:nth-of-type(3)>nav>ul>li>button {
+  width: 100%;
+  height: 100%;
+}
+
+body .profiel section:nth-of-type(3)>nav>ul>li:first-of-type {
+  background: url("../images/grid.svg");
+  background-repeat: no-repeat;
+  overflow: hidden;
+  border: none;
+  color: transparent;
+  width: 1.715em;
+  height: 1.715em;
+}
+
+body .profiel section:nth-of-type(3)>nav>ul>li:nth-of-type(2) {
+  background: url("../images/instagramtv.svg");
+  background-repeat: no-repeat;
+  overflow: hidden;
+  border: none;
+  color: transparent;
+  width: 1.715em;
+  height: 1.715em;
+}
+
+body .profiel section:nth-of-type(3)>nav>ul>li:nth-of-type(3) {
+  background: url("../images/bookmark.svg");
+  background-repeat: no-repeat;
+  overflow: hidden;
+  border: none;
+  color: transparent;
+  width: 1.715em;
+  height: 1.715em;
+}
+
+body .profiel section:nth-of-type(3)>nav>ul>li:last-of-type {
+  background: url("../images/getagd.svg");
+  background-repeat: no-repeat;
+  overflow: hidden;
+  border: none;
+  color: transparent;
+  width: 1.715em;
+  height: 1.715em;
 }
 
 body .profiel section:last-of-type {
@@ -845,6 +946,7 @@ body .profiel section:last-of-type {
     ". . ."
     ". . ."
     ". . .";
+  margin-bottom: 1.8em;
 }
 
 body .profiel section:last-of-type img {
