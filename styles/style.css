@@ -742,8 +742,11 @@ body>footer>p {
 /* vanaf hier begint de css voor de profiel pagina */
 /* styling article */
 body .profiel {
+  max-width: 64.38em;
+  margin: auto;
   margin-top: 1.5em;
-}
+  overflow-x: hidden;
+  }
 
 body .profiel section:first-of-type {
   padding-bottom: 2em;
@@ -833,7 +836,21 @@ body .profiel section>footer>p>a {
   text-decoration: none;
 }
 
+body .profiel section:last-of-type {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 3px 3px;
+  grid-template-areas:
+    ". . ."
+    ". . ."
+    ". . .";
+}
 
+body .profiel section:last-of-type img {
+  width: 100%;
+  object-fit: cover;
+}
 
 
 
