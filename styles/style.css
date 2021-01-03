@@ -581,14 +581,66 @@ body .homepage article>footer>p:first-of-type {
 }
 
 body .homepage article>footer>details {
-  display: block;
+  width: 100%;
+  padding: .3em 0;
+  margin: 0 0;
+  line-height: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 100%;
   padding: .3em 0;
   color: #8e8e8e;
-  width: 100%;
 }
 
 body .homepage article>footer>details>summary::-webkit-details-marker {
   display: none;
+}
+
+body .homepage article>footer>details>article {
+  width: 100%;
+  padding: .3em 0;
+  margin: 0 0;
+  line-height: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 100%;
+}
+
+body .homepage article>footer>details>article>div {
+  display: flex;
+  flex-direction: row;
+}
+
+body .homepage article>footer>details>article>div>h2>a {
+  align-self: flex-start;
+  padding: 0 0;
+}
+
+body .homepage article>footer>details>article>div>h2 {
+  align-self: flex-start;
+  padding: 0 0;
+}
+
+body .homepage article>footer>details>article>div>p {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: .3em;
+  padding-right: 0em;
+  margin: 0 0;
+}
+
+body .homepage article>footer>details>article>button {
+  background: url("../images/hart.svg");
+  background-repeat: no-repeat;
+  overflow: hidden;
+  border: none;
+  color: transparent;
+  width: .9em;
+  height: .9em;
 }
 
 body .homepage article>footer>article {
@@ -601,6 +653,10 @@ body .homepage article>footer>article {
   justify-content: space-between;
   align-items: flex-start;
   max-width: 100%;
+}
+
+body .homepage article>footer>article.verwijder {
+  display: none;
 }
 
 body .homepage article>footer>article>div {
@@ -760,7 +816,6 @@ body>.profielheader>header {
   max-width: 64.38em;
   margin: auto;
   background: #ffffff;
-  /* border-bottom: 0.05em solid rgba(var(--b6a, 219, 219, 219), 1); */
   margin-bottom: 0.1em;
   padding: 0em 1.42857em;
 }
@@ -1008,7 +1063,7 @@ body .profiel section:nth-of-type(3)>nav>ul {
 }
 
 body .profiel section:nth-of-type(3)>nav>ul>li {
-  justify-self: center;
+  vertical-align: middle;
   align-self: center;
 }
 
@@ -1017,6 +1072,7 @@ body .profiel section:nth-of-type(3)>nav>ul>li>button {
   height: 100%;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: .85714em;
+  font-weight: 600;
   text-transform: uppercase;
 }
 
@@ -1106,53 +1162,65 @@ body .profiel section:last-of-type img {
 
   body .profiel section:nth-of-type(3) {
     border: none;
-    padding-top: 1.25em;
-    padding-bottom: 1.25em;
-  }
-
-  body .profiel section:nth-of-type(3)>nav>ul {
-    max-width: 30em;
-    margin: auto;
     padding: 0;
   }
 
+  body .profiel section:nth-of-type(3)>nav {
+    height: 3.6em;
+  }
+
+  body .profiel section:nth-of-type(3)>nav>ul {
+    justify-content: flex-start;
+    margin: auto;
+    width: 34.5em;
+    padding-top: 1.25em;
+  }
+
   body .profiel section:nth-of-type(3)>nav>ul>li>button {
-    width: 100%;
-    height: 100%;
+    width: auto;
+    margin: 0;
+    padding: 0;
     padding-left: 2em;
+    align-items: center;
+    text-align: center;
   }
 
   body .profiel section:nth-of-type(3)>nav>ul>li:first-of-type {
     background: url("../images/grid\(zwart\).svg");
+    background-repeat: no-repeat;
     overflow: visible;
     border: none;
     color: #262626;
     width: .85724em;
     height: .85724em;
+    padding-right: 10em;
   }
 
   body .profiel section:nth-of-type(3)>nav>ul>li:nth-of-type(2) {
     overflow: visible;
     border: none;
-    color: #262626;
+    color: #8E8E8E;
     width: .85724em;
     height: .85724em;
+    padding-right: 7em;
   }
 
   body .profiel section:nth-of-type(3)>nav>ul>li:nth-of-type(3) {
     overflow: visible;
     border: none;
-    color: #262626;
+    color: #8E8E8E;
     width: .85724em;
     height: .85724em;
+    padding-right: 10em;
   }
 
   body .profiel section:nth-of-type(3)>nav>ul>li:last-of-type {
     overflow: visible;
     border: none;
-    color: #262626;
+    color: #8E8E8E;
     width: .85724em;
     height: .85724em;
+    padding-right: 10em;
   }
 
   body .profiel section:last-of-type {
