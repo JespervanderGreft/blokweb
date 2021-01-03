@@ -30,7 +30,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Screenreader
 
--Ik merkte eigenlijk met de screenreader dat alles heel logisch staat qua volgorde, alleen de reactie like knop heten eerste like en daardoor leek het net of het ook een normale like knop was, deze heet nu reactie like knop zoat het veel duidelijker is dat de like knop bij de reacties hoort.-
+-Ik merkte eigenlijk met de screenreader dat alles heel logisch staat qua volgorde, alleen de reactie like knop heten eerste like en daardoor leek het net of het ook een normale like knop was, deze heet nu reactie like knop zodat het veel duidelijker is dat de like knop bij de reacties hoort.-
 
 ## Voortgang 2 (week 5)
 
