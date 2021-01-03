@@ -843,11 +843,11 @@ body>.profielheader>header>nav>ul>li:nth-of-type(4) {
 }
 
 body>.profielheader>header>nav>ul>li:nth-of-type(5) {
-border: .1em solid black;
-border-radius: 50%;
-width: 22px;
-height: 22px;
-padding: .15em .15em;
+  border: .1em solid black;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  padding: .15em .15em;
 }
 
 body>.profielheader>header>nav>ul>li:nth-of-type(5) img {
@@ -860,7 +860,7 @@ body .profiel {
   margin: auto;
   margin-top: 1em;
   overflow-x: hidden;
-  }
+}
 
 body .profiel section:first-of-type {
   padding-bottom: .9em;
@@ -928,7 +928,7 @@ body .profiel section>header>button:nth-of-type(2) {
 body .profiel section>header>button:last-of-type {
   grid-area: button;
   padding: 0;
-  border: 1px solid rgba(var(--ca6,219,219,219),1);
+  border: 1px solid rgba(var(--ca6, 219, 219, 219), 1);
   border-radius: 0.2857em;
   min-height: 2.143em;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -1001,20 +1001,23 @@ body .profiel section:nth-of-type(3) {
 }
 
 body .profiel section:nth-of-type(3)>nav>ul {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas:
-    ". . .";
+  display: flex;
+  justify-content: space-between;
+  margin-left: 3em;
+  margin-right: 3em;
 }
 
 body .profiel section:nth-of-type(3)>nav>ul>li {
   justify-self: center;
+  align-self: center;
 }
 
 body .profiel section:nth-of-type(3)>nav>ul>li>button {
   width: 100%;
   height: 100%;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: .85714em;
+  text-transform: uppercase;
 }
 
 body .profiel section:nth-of-type(3)>nav>ul>li:first-of-type {
@@ -1103,12 +1106,58 @@ body .profiel section:last-of-type img {
 
   body .profiel section:nth-of-type(3) {
     border: none;
+    padding-top: 1.25em;
+    padding-bottom: 1.25em;
+  }
+
+  body .profiel section:nth-of-type(3)>nav>ul {
+    max-width: 30em;
+    margin: auto;
+    padding: 0;
+  }
+
+  body .profiel section:nth-of-type(3)>nav>ul>li>button {
+    width: 100%;
+    height: 100%;
+    padding-left: 2em;
+  }
+
+  body .profiel section:nth-of-type(3)>nav>ul>li:first-of-type {
+    background: url("../images/grid\(zwart\).svg");
+    overflow: visible;
+    border: none;
+    color: #262626;
+    width: .85724em;
+    height: .85724em;
+  }
+
+  body .profiel section:nth-of-type(3)>nav>ul>li:nth-of-type(2) {
+    overflow: visible;
+    border: none;
+    color: #262626;
+    width: .85724em;
+    height: .85724em;
+  }
+
+  body .profiel section:nth-of-type(3)>nav>ul>li:nth-of-type(3) {
+    overflow: visible;
+    border: none;
+    color: #262626;
+    width: .85724em;
+    height: .85724em;
+  }
+
+  body .profiel section:nth-of-type(3)>nav>ul>li:last-of-type {
+    overflow: visible;
+    border: none;
+    color: #262626;
+    width: .85724em;
+    height: .85724em;
   }
 
   body .profiel section:last-of-type {
     gap: 28px 28px;
   }
-
 }
 
 /* een hele handige code om te kijken wat buiten de lijnen valt.
