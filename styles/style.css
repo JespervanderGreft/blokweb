@@ -393,17 +393,16 @@ body .homepage article>header {
 }
 
 /* styling button van profiel */
-body .homepage article>header>button:nth-of-type(1) {
+body .homepage article>header>a {
   grid-area: profiel;
   border: none;
-  background: none;
   width: 3.15em;
   height: 3.15em;
 }
 
 /* de image in de button stylen 
 wanneer het profiel ook een verhaal heeft*/
-body .homepage article>header>button>a:nth-of-type(1)>img {
+body .homepage article>header>a>button>img {
   width: 2.3em;
   height: 2.3em;
   border: double .5em white;
@@ -415,8 +414,11 @@ body .homepage article>header>button>a:nth-of-type(1)>img {
 }
 
 /* de image niet stylen wanneer er geen verhaal is */
-body .homepage article:nth-of-type(3)>header>button>a:nth-of-type(1)>img {
-  border: none;
+body .homepage article:nth-of-type(3)>header>a>button>img {
+  width: 2.3em;
+  height: 2.3em;
+  border-radius: 50%;
+  background-image: none;
 }
 
 body .homepage article>header>h2 {
@@ -427,7 +429,7 @@ body .homepage article>header>h2 {
   margin-bottom: 1.2em;
 }
 
-body .homepage article>header>button+h2 {
+body .homepage article>header>a+h2 {
   grid-area: tekst;
   grid-row-start: 1;
   grid-row-end: -1;
@@ -455,7 +457,7 @@ body .homepage article>header>p>a {
   font-weight: 600;
 }
 
-body .homepage article>header>button:nth-of-type(2) {
+body .homepage article>header>button {
   grid-area: button;
   background: url("../images/opties.svg");
   background-repeat: no-repeat;
@@ -554,7 +556,7 @@ body .homepage article p>a {
   color: #00376b;
 }
 
-body .homepage article img:nth-of-type(1) {
+body .homepage article>img:nth-of-type(1) {
   width: 100%;
 }
 
