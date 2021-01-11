@@ -708,7 +708,7 @@ body .homepage article>form {
 body .homepage article>form>textarea {
   border: none;
   resize: none;
-  max-width: 40em;
+  min-width: 36em;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: 400;
   font-size: 1em;
@@ -727,7 +727,7 @@ body .homepage article>form>input[type=submit] {
   font-style: normal;
   font-size: 1em;
   padding: 0 0;
-  padding-left: 7em;
+  margin-left: .5em;
 }
 
 body>footer {
