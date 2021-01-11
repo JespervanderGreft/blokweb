@@ -362,12 +362,15 @@ body .homepage h2 {
 
 /* styling van time */
 body .homepage time {
+  display: block;
   font-weight: 300;
   font-style: normal;
   font-size: .715em;
   text-transform: uppercase;
   color: #8e8e8e;
-  padding: 0em 1.14em;
+  padding: 0 1.594em;
+  padding-bottom: 1em;
+  margin: 0 0;
 }
 
 /* styling article */
@@ -693,9 +696,38 @@ body .homepage article>footer>article>button {
   height: .9em;
 }
 
-body .homepage time {
-  padding: 0 1.594em;
-  margin: 0 0;
+body .homepage article>form {
+  display: flex;
+  border-top: 0.05em solid rgba(var(--ce3,239,239,239),1);
+  padding: 0 1.14em;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 3.5em;
+}
+
+body .homepage article>form>textarea {
+  border: none;
+  resize: none;
+  max-width: 40em;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  color: #262626;
+  padding: 0 0;
+}
+
+body .homepage article>form>input[type=submit] {
+  border: none;
+  align-self: center;
+  background: none;
+  color: #0095f6;
+  opacity: .3;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1em;
+  padding: 0 0;
+  padding-left: 7em;
 }
 
 body>footer {
@@ -788,8 +820,7 @@ body>footer>p {
     background-color: #ffffff;
     border: 0.05em solid rgba(var(--b6a, 219, 219, 219), 1);
     border-radius: .2em;
-    padding-bottom: .5em;
-    margin-bottom: 1em;
+    margin-bottom: 4em;
   }
 }
 
