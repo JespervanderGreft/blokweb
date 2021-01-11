@@ -804,7 +804,9 @@ body>footer>p {
     border-radius: .2em;
     margin-bottom: 4em;
   }
+}
 
+@media (min-width: 735px) {
   body .homepage article>form {
     display: flex;
     border-top: 0.05em solid rgba(var(--ce3, 239, 239, 239), 1);
