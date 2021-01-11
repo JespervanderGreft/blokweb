@@ -278,16 +278,6 @@ body .homepage>section:nth-of-type(1) {
   margin-bottom: 2em;
 }
 
-body .homepage>section:nth-of-type(1)>ul {
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  height: 8.429em;
-  margin: 0em 0em;
-  list-style: none;
-  overflow-x: scroll;
-}
-
 /* styling voor de verder knop */
 body .homepage>section:nth-of-type(1)>button {
   position: absolute;
@@ -297,7 +287,7 @@ body .homepage>section:nth-of-type(1)>button {
   background-repeat: no-repeat;
   border-radius: 50%;
   border: transparent;
-  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   color: transparent;
   width: 1.7em;
@@ -305,8 +295,19 @@ body .homepage>section:nth-of-type(1)>button {
 }
 
 /* de scrollbar tranparant maken */
-::-webkit-scrollbar {
+body .homepage>section:nth-of-type(1)>::-webkit-scrollbar {
   background: transparent;
+}
+
+body .homepage>section:nth-of-type(1)>ul {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 0 0;
+  padding-top: 1em;
+  margin: 0 0;
+  list-style: none;
+  overflow-x: scroll;
 }
 
 body .homepage>section:nth-of-type(1)>ul>li {
@@ -314,8 +315,8 @@ body .homepage>section:nth-of-type(1)>ul>li {
   justify-content: left;
   flex-direction: column;
   align-items: center;
-  padding: 0 .25em;
-  margin-top: 1em;
+  padding: 0 0;
+  padding-right: .45em;
   min-width: 6.147em;
   max-width: 6.65em;
   font-size: 0.86em;
@@ -332,9 +333,14 @@ body .homepage>section:nth-of-type(1)>ul>li:nth-last-of-type(1) {
   padding-left: .25em;
 }
 
-body .homepage>section:nth-of-type(1) ul>li>img {
+body .homepage>section:nth-of-type(1) ul>li>button {
   height: 4.483em;
   width: 4.483em;
+}
+
+body .homepage>section:nth-of-type(1) ul>li>button>img {
+  height: 3.802em;
+  width: 3.802em;
   border: double .5em white;
   border-radius: 50%;
   background-image: linear-gradient(white, white),
@@ -344,7 +350,7 @@ body .homepage>section:nth-of-type(1) ul>li>img {
 }
 
 body .homepage>section:nth-of-type(1)>ul>li>p {
-  margin-top: .2em;
+  margin-top: .6em;
   margin-bottom: 0em;
   font-size: 1em;
   letter-spacing: .01em;
@@ -480,6 +486,10 @@ body .homepage article h2 a {
   color: #262626;
   text-decoration: none;
   padding: 0em 1.14em;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 body .homepage section>article>button:nth-of-type(1) {
@@ -699,37 +709,7 @@ body .homepage article>footer>article>button {
 }
 
 body .homepage article>form {
-  display: flex;
-  border-top: 0.05em solid rgba(var(--ce3,239,239,239),1);
-  padding: 0 1.14em;
-  align-items: center;
-  justify-content: flex-start;
-  min-height: 3.5em;
-}
-
-body .homepage article>form>textarea {
-  border: none;
-  resize: none;
-  min-width: 36em;
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-weight: 400;
-  font-size: 1em;
-  color: #262626;
-  padding: 0 0;
-}
-
-body .homepage article>form>input[type=submit] {
-  border: none;
-  align-self: center;
-  background: none;
-  color: #0095f6;
-  opacity: .3;
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  font-size: 1em;
-  padding: 0 0;
-  margin-left: .5em;
+  display: none;
 }
 
 body>footer {
@@ -823,6 +803,40 @@ body>footer>p {
     border: 0.05em solid rgba(var(--b6a, 219, 219, 219), 1);
     border-radius: .2em;
     margin-bottom: 4em;
+  }
+
+  body .homepage article>form {
+    display: flex;
+    border-top: 0.05em solid rgba(var(--ce3, 239, 239, 239), 1);
+    padding: 0 1.14em;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 3.5em;
+  }
+  
+  body .homepage article>form>textarea {
+    border: none;
+    resize: none;
+    min-width: 36em;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    color: #262626;
+    padding: 0 0;
+  }
+  
+  body .homepage article>form>input[type=submit] {
+    border: none;
+    align-self: center;
+    background: none;
+    color: #0095f6;
+    opacity: .3;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1em;
+    padding: 0 0;
+    margin-left: .5em;
   }
 }
 
