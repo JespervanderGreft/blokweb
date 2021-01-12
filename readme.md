@@ -11,22 +11,72 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 3. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details-
 4. https://github.com/necolas/normalize.css/issues/665
 5. https://blog.wernull.com/2013/04/debug-ghost-css-elements-causing-unwanted-scrolling/ 
+6. https://codepen.io/shooft/pen/abNPEga
 
 
 
 ## Eindgesprek (week 7/8)
 
--dit ging goed & dit was lastig-
+-Ik ben echt heel erg trots op het resultaat wat ik heb neergezet met deze opdracht. Aan het begin van dit vak zat ik er echt tegenop om met html en css te gaan werken maar dit is helemaal omgeslagen.
+Ik had echt nooit gedacht dat ik html en css leuk zou gaan vinden en dat ik zoiets kon maken als een Instagram website. 
+
+Wat is er goed gegaan?
+Eigenlijk heb ik bijna alles kunnen maken wat ik wilde van de homepage en de profielpagina, soms was het even knoeien en lukte het niet maar uiteindelijk kwam ik er wel uit. Het leukste wat ik telkens hoor van andere is dat ze zeggen dat je echt geen verschil ziet tussen de echte Instagram website en die van mij.
+
+Wat ging er minder?
+Zoals iedereen die met html en css werkt is het niet fijn als iets niet lukt op de manier waarop je wilt dat het lukt. Dit gebeurde ook tijdens het gebruiken van grid in de reacties sectie van een post, uiteindelijk heb ik er toch maar voor gekozen om flex te gebruiken omdat dit toch beter werkte. Ik heb wel een div moeten gebruiken in de article van de reactie omdat het anders echt niet kon dit was in overleg met Deanne en Justus. Ook om de header van de pagina moest ik uiteindelijk een div plaatsen omdat het niet anders lukte met de background van de header die wel groter moest worden als de pagina ook groter werd.
+
+Helaas ging het javascript gedeelte me niet zo goed af en ben ik niet helemaal tevreden met het eindresultaat van de like buttons.
+Ik heb geprobeerd de like animatie naar elke button te laten luisteren met querySelectorAll maar helaas lukte dit niet en ik heb echt alles geprobeerd voor de rest maar ik snap niet waarom het niet werkt op verschillende manieren.-
 
 **Screenshot():**
 
 -screenshot(s) van je eindresultaat-
-
+![Eindresultaat Instagram home op iPhone 11](images/eindresultaathome(iphone11).png)
+![Eindresultaat Instagram home op laptop](images/eindresultaathome(laptop).png)
+![Eindresultaat Instagram profiel op iPhone 11](images/eindresultaatprofiel(iphone11).png)
+![Eindresultaat Instagram profiel op laptop](images/eindresultaatprofiel(laptop).png)
 
 
 ## Voortgang 3 (week 6)
 
--same as voortgang 1-
+### Stand van zaken
+
+-De homepage is helemaal af en responsive.
+Ik ben nu bezig met de profielpagina maken die ook zo goed als af is. Daarna moet ik nog valideren en javascript toevoegen aan iets.-
+
+**Screenshot(s):**
+
+-screenshot(s) van hoe ver je bent de homepage is af-
+![Derde voortgang Instagram op iPhone 11](images/v5.png)
+![Derde voortgang Instagram op iPhone 11 volledig](images/v5(iphone11).png)
+![Derde voortgang Instagram op iPhone 5](images/v5(iphone5).png)
+![Derde voortgang Instagram op laptop](images/v5(laptop).png)
+
+-screenshot(s) van hoe ver je bent de profielpagina bijna af-
+![Derde voortgang Instagram profiel op Iphone 11 bijna af](images/profielv4.png)
+![Derde voortgang Instagram profiel op Iphone 11 tussendoor](images/profielv3.png)
+![Derde voortgang Instagram profiel op Iphone 11 tussendoor](images/profielv2.png)
+![Derde voortgang Instagram profiel op Iphone 11 tussendoor](images/profielv1.png)
+
+### Agenda voor meeting
+
+-Net als de vorige meeting kan ik niet met andere bespreken want niemand is er elke keer.
+Voor mezelf wil ik de volgende punten bespreken:
+
+Of de div in de header mag aangezien het volgens mij niet anders kan.
+
+Kijken naar mijn javascript want ik kwam er niet helemaal uit wat ik wilde gaan doen.
+
+Algeme blik naar mijn twee pagina's of het allemaal klopt. -
+
+
+### Verslag van meeting
+- De feedback die ik heb ontvangen:
+Ik heb met Deanne de site doorgenomen en dingen waar ik over twijfel of dat goed was.
+We hebben besproken dat de div in de header niet anders kan en vandaar dat die er nog steeds staat.
+De class van de main zou op de body gezet kunnen worden zodat je een class minder nodig hebt voor de nav van header. Ik heb dit meteen na de meeting geprobeerd maar dit lukte niet omdat een aantal andere dingen dan niet goed kwamen te staan. Als ik dit had gedaan voordat mijn css bijna helemaal klaar was dan was dit wel gelukt maarja toen wist ik nog niet dat ik een div nodig had in me header. Voor de rest hebben we even gekeken naar Javascript wat ik wilde gaan doen en Deanne leek het een goed idee om de like button animatie te maken omdat ik twijfelde tussen dat of het uitklapmenu van de opmerkingen.
+Ook moest ik nog even betere alt tekst bij een aantal images neerzetten-
 
 ## Screenreader
 
@@ -43,7 +93,7 @@ Ik gebruik viewbox omdat de css anders geladen moet worden en alles verplaatst w
 **Screenshot(s):**
 
 -screenshot(s) van hoe ver je bent-
-![Eerste voortgang Instagram op iPhone 11](images/tweedevoortgang.png)
+![Tweede voortgang Instagram op iPhone 11](images/tweedevoortgang.png)
 
 ### Agenda voor meeting
 
@@ -55,7 +105,20 @@ Voor mezelf wil ik de volgende punten bespreken:
 
 
 ### Verslag van meeting
+- De feedback die ik heb ontvangen:
+In de footer van de article mag weer een article per reactie een article.
 
+Taal kiezen is een selectbox.
+
+Op de main een margin auto en max-width gezet en op de header geen max-width.
+
+De sections in een main met een class.
+
+Op de zoekbalk inputtype tekst met een button, die zet je op display none en dan bij breakpoints op display.
+
+Met javascript de reacties die er al staan weghalen door display none te zetten op de class dat de details is uitgeklapt.
+
+De foto’s met grid doen voor de profielpagina.-
 
 
 ## Voortgang 1 (week 3)
