@@ -1,5 +1,5 @@
 // JavaScript Document
-// ervoor zorgen dat de reacties die er al staan verdwijnen wanneer de details wordt opengeklapt
+// Zorgt ervoor dat de class veranderd wordt van de like button en die triggerd meteen ook een animatie
 var buttonLikeGroot = document.querySelector("button.like-button-groot");
 
 // for (i = 0; i < buttonLikeGroot.length; i++) {

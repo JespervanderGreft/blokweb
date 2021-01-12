@@ -160,7 +160,7 @@ body {
   margin: 0;
   color: #262626;
 }
-
+/* dit is nodig om de background van de header verder te laten doorlopen als het scherm groter wordt */
 body>div {
   position: sticky;
   top: 0;
@@ -179,11 +179,11 @@ body>div>header {
   max-width: 64.38em;
   margin: auto;
   background: #ffffff;
-  /* border-bottom: 0.05em solid rgba(var(--b6a, 219, 219, 219), 1); */
   margin-bottom: 0.1em;
   padding: 0em 1.42857em;
 }
 
+/* styling van de titel van de pagina */
 body>div>header>h1 {
   display: inline;
   font-size: 2em;
@@ -199,6 +199,7 @@ body>div>header>h1>a {
   color: transparent;
 }
 
+/* De zoekbalk die op kleine schermen niet wordt weergegeven */
 body>div>header>input {
   display: none;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -223,10 +224,12 @@ body>div>header>input {
   margin-right: 1em;
 }
 
+/* zorgt ervoor dat de ingetype tekst niet onderstreept is */
 ::placeholder {
   text-decoration: none;
 }
 
+/* wanneer je input gaat geven verplaatst het zoekicoon */
 body>div>header input:focus {
   padding-left: 16px;
   background-position: 0;
@@ -263,6 +266,7 @@ body>div>header>nav>ul>li:nth-of-type(5) img {
   border-radius: 50%;
 }
 
+/* zorgt ervoor dat de body niet groter wordt dan 42.86em */
 body .homepage {
   max-width: 42.86em;
   margin: auto;
@@ -338,6 +342,7 @@ body .homepage>section:nth-of-type(1) ul>li>button {
   width: 4.483em;
 }
 
+/* zorgt ervoor dat elk verhaal een border om zich krijgt */
 body .homepage>section:nth-of-type(1) ul>li>button>img {
   height: 3.802em;
   width: 3.802em;
@@ -435,6 +440,7 @@ body .homepage article>header>h2 {
   margin-bottom: 1.2em;
 }
 
+/* zorgt ervoor dat wanneer een header geen p ook heeft die in het midden wordt gezet */
 body .homepage article>header>a+h2 {
   grid-area: tekst;
   grid-row-start: 1;
@@ -492,20 +498,9 @@ button {
   outline: none;
 }
 
+/* Als je over een button hovert lijkt het op een link */
 button:hover {
   cursor: pointer;
-}
-
-@keyframes unlike-animation {
-  0%, 100% {
-    transform:scale(1);
-  }
-  50% {
-    transform:scale(1.2);
-  }
-  90% {
-    transform:scale(0.9);
-  }
 }
 
 button.like-button-groot {
@@ -524,6 +519,7 @@ button.like-button-groot {
   animation-duration: .3s;
 }
 
+/* zorgt ervoor dat de image veranderd naar een rood hartje */
 button.like-button-groot.grootGeliked {
   background: url("../images/hartrood.svg");
   background-repeat: no-repeat;
@@ -540,27 +536,37 @@ button.like-button-groot.grootGeliked {
   animation-duration: .3s;
 }
 
+/* De unlike animatie omdat deze ook nodig is */
 @keyframes unlike-animation {
-  0%, 100% {
-    transform:scale(1);
+
+  0%,
+  100% {
+    transform: scale(1);
   }
+
   50% {
-    transform:scale(1.2);
+    transform: scale(1.2);
   }
+
   90% {
-    transform:scale(0.9);
+    transform: scale(0.9);
   }
 }
 
+/* like animatie */
 @keyframes like-animation {
-  0%, 100% {
-    transform:scale(1);
+
+  0%,
+  100% {
+    transform: scale(1);
   }
+
   50% {
-    transform:scale(1.2);
+    transform: scale(1.2);
   }
+
   90% {
-    transform:scale(0.9);
+    transform: scale(0.9);
   }
 }
 
@@ -603,6 +609,7 @@ body .homepage article>button:nth-of-type(4) {
   margin-bottom: 0.57em;
 }
 
+/* Het aantal likes de button daarvan */
 body .homepage article>button:nth-of-type(5) {
   display: block;
   border: none;
@@ -634,6 +641,7 @@ body .homepage article>footer {
   margin: 0 0;
 }
 
+
 body .homepage article>footer>h2:first-of-type {
   display: inline;
   padding: 0 0;
@@ -653,6 +661,7 @@ body .homepage article>footer>p:first-of-type {
   line-height: 1.286em;
 }
 
+/* De opmerkingen bekijken details */
 body .homepage article>footer>details {
   width: 100%;
   padding: .3em 0;
@@ -667,6 +676,7 @@ body .homepage article>footer>details {
   color: #8e8e8e;
 }
 
+/* zorgt ervoor dat er geen pijltje voorstaat */
 body .homepage article>footer>details>summary::-webkit-details-marker {
   display: none;
 }
@@ -742,9 +752,9 @@ body .homepage article>footer>article {
   max-width: 100%;
 }
 
-body .homepage article>footer>article.verwijder {
+/* body .homepage article>footer>article.verwijder {
   display: none;
-}
+} */
 
 body .homepage article>footer>article>div {
   display: flex;
@@ -780,6 +790,7 @@ body .homepage article>footer>article>button {
   height: .9em;
 }
 
+/* De opmerkingen plaatsen balk die niet wordt weergeven op kleine schermen */
 body .homepage article>form {
   display: none;
 }
@@ -820,6 +831,7 @@ body>footer>ul>li>a {
   color: #8e8e8e;
 }
 
+/* Taal kiezen select */
 body>footer>select {
   display: inline-block;
   justify-content: center;
@@ -878,6 +890,7 @@ body>footer>p {
   }
 }
 
+/* Opmerkingen balk weergeven met styling ervan */
 @media (min-width: 735px) {
   body .homepage article>form {
     display: flex;
@@ -887,7 +900,7 @@ body>footer>p {
     justify-content: flex-start;
     min-height: 3.5em;
   }
-  
+
   body .homepage article>form>textarea {
     border: none;
     resize: none;
@@ -898,7 +911,7 @@ body>footer>p {
     color: #262626;
     padding: 0 0;
   }
-  
+
   body .homepage article>form>input[type=submit] {
     border: none;
     align-self: center;
@@ -1043,6 +1056,7 @@ body .profiel section:first-of-type {
   border-bottom: 0.05em solid rgba(var(--b6a, 219, 219, 219), 1);
 }
 
+/* Het bovenste gedeelte met de belangrijkse dingen voor de gebruiker */
 body .profiel section>header {
   display: grid;
   align-items: center;
@@ -1101,6 +1115,7 @@ body .profiel section>header>button:nth-of-type(2) {
   margin: 0em;
 }
 
+/* profiel bewerken button */
 body .profiel section>header>button:last-of-type {
   grid-area: button;
   padding: 0;
@@ -1122,6 +1137,7 @@ body .profiel section h2 a {
   padding: 0em 1.14em;
 }
 
+/* styling van de extra informatie over de gebruiker */
 body .profiel section>footer {
   margin-left: 1em;
 }
@@ -1140,6 +1156,7 @@ body .profiel section:first-of-type>footer>p>a {
   text-decoration: none;
 }
 
+/* styling van de berichten, volgers, volgend */
 body .profiel section:nth-of-type(2) {
   padding-top: .8em;
   padding-bottom: .8em;
@@ -1170,6 +1187,7 @@ body .profiel section:nth-of-type(2)>ul>li>a {
   color: #262626;
 }
 
+/* styling van de nav */
 body .profiel section:nth-of-type(3) {
   padding-top: .72em;
   padding-bottom: .72em;
@@ -1237,6 +1255,7 @@ body .profiel section:nth-of-type(3)>nav>ul>li:last-of-type {
   height: 1.715em;
 }
 
+/* styling van de geposte foto's */
 body .profiel section:last-of-type {
   display: grid;
   width: 100%;
@@ -1280,16 +1299,17 @@ body .profiel section:last-of-type img {
   body>.profiel {
     padding: 0em 1.5em;
   }
-
+ 
+  /* Padding op 0 */
   body .profiel section:nth-of-type(3) {
-    border: none;
     padding: 0;
   }
 
+  /* styling van de nav */
   body .profiel section:nth-of-type(3)>nav {
     height: 3.6em;
   }
-
+  
   body .profiel section:nth-of-type(3)>nav>ul {
     justify-content: flex-start;
     margin: auto;
@@ -1306,6 +1326,7 @@ body .profiel section:last-of-type img {
     text-align: center;
   }
 
+  /* overflow visible zorgt ervoor dat de tekst erbij komt te staan */
   body .profiel section:nth-of-type(3)>nav>ul>li:first-of-type {
     background: url("../images/grid\(zwart\).svg");
     background-repeat: no-repeat;
@@ -1344,6 +1365,7 @@ body .profiel section:last-of-type img {
     padding-right: 10em;
   }
 
+  /* meer ruimte tussen de posts */
   body .profiel section:last-of-type {
     gap: 28px 28px;
   }
