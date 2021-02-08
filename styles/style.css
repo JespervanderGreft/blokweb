@@ -503,7 +503,7 @@ button:hover {
   cursor: pointer;
 }
 
-button.like-button-groot {
+.like-button-groot {
   background: url("../images/hart.svg");
   background-repeat: no-repeat;
   border: none;
@@ -520,7 +520,7 @@ button.like-button-groot {
 }
 
 /* zorgt ervoor dat de image veranderd naar een rood hartje */
-button.like-button-groot.grootGeliked {
+.like-button-groot.grootGeliked {
   background: url("../images/hartrood.svg");
   background-repeat: no-repeat;
   border: none;
@@ -716,7 +716,7 @@ body .homepage article>footer>details>article>div>p {
   margin: 0 0;
 }
 
-button.like-button-klein {
+.like-button-klein {
   background: url("../images/hart.svg");
   background-repeat: no-repeat;
   overflow: hidden;
@@ -728,7 +728,7 @@ button.like-button-klein {
   animation-duration: .3s;
 }
 
-button.like-button-klein.kleinGeliked {
+.like-button-klein.kleinGeliked {
   background: url("../images/hartrood.svg");
   background-repeat: no-repeat;
   overflow: hidden;
