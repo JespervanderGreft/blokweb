@@ -1,21 +1,21 @@
 // JavaScript Document
 // Zorgt ervoor dat de class veranderd wordt van de like button en die triggerd meteen ook een animatie
-var buttonLikeGroot = document.querySelectorAll('.like-button-groot')
+var buttonLikeGroot = document.querySelector("button.like-button-groot");
 
-for (i = 0; i < buttonLikeGroot.length; i++) {
-        buttonLikeGroot[i].addEventListener("click", grootLiken)
-      }
+// for (i = 0; i < buttonLikeGroot.length; i++) {
+//         buttonLikeGroot[i].addEventListener("click", grootliken);
+//       }
 
-function grootLiken(e) {
-        e.target.classList.toggle('grootGeliked')
+buttonLikeGroot.addEventListener("click", grootliken);
+
+function grootliken() {
+        buttonLikeGroot.classList.toggle("grootGeliked");
 }
 
-var buttonLikeKlein = document.querySelectorAll('.like-button-klein')
+// var buttonLikeKlein = document.querySelector("button.like");
+// buttonLikeKlein.addEventListener("click", kleinliken);
 
-for (i = 0; i < buttonLikeKlein.length; i++) {
-        buttonLikeKlein[i].addEventListener("click", kleinLiken)
-      }
-
-function kleinLiken(e) {
-        e.target.classList.toggle('kleinGeliked')
-}
+// function kleinliken() {
+//         buttonLikeKlein.classList.toggle("kleinGeliked");
+//         console.log("Hello world!");
+// }
